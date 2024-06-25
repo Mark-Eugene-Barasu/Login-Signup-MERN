@@ -1,4 +1,10 @@
-import React from 'react'
+// import React from 'react';
+// ~~~~~~I later embedded this code ~~~~~~~~~
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import axios from 'axios';
+import { useNavigate } from "react-router-dom";
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 function Login() {
     
@@ -56,10 +62,9 @@ function Login() {
                         Register
                     </button>
                 </form>
-                    <p>Already Have an Account</p>
-                    <Link to="/login" className="btn btn-default border w-100 bg-light rounded-0 text-decoration-none">
-                        Login
-                    </Link>
+                <p>Already Have an Account</p>
+                <Link to="/login" className="btn btn-default border w-100 bg-light rounded-0 text-decoration-none">Login
+                </Link>
             </div>
         </div>
     )
